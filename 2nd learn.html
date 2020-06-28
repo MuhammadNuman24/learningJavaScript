@@ -1,0 +1,26 @@
+<script>
+
+    'use strict';
+
+    //pass by declaration
+    //outer function
+    function outer() {
+
+        const person = {
+            firstName: 'Bob',
+            lastName: 'Smith'
+        };
+
+        //inner funtion
+        function doIt() {
+           person.firstName = "Jane";
+            console.log(person);
+        }
+        //invoke inner funtion
+        doIt();
+        console.log(person);
+
+    }
+    //invoke outer funtion
+    outer();
+</script>
